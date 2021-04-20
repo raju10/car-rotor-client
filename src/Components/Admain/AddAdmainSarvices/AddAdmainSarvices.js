@@ -20,7 +20,7 @@ const AddAdmainSarvices = () => {
       price: data.price,
     };
     console.log(eventData);
-    const url = `http://localhost:10000/addEvent`;
+    const url = `https://git.heroku.com/arcane-gorge-96812.git/addEvent`;
     fetch(url, {
       method: "POST",
       body: JSON.stringify(eventData),

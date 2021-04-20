@@ -25,7 +25,7 @@ const servicesDatas = [
 const OurSarvices = () => {
   const [servicesData, setProduct] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:10000/ourProduct")
+    fetch("https://git.heroku.com/arcane-gorge-96812.git/ourProduct")
       .then((res) => res.json())
       .then((data) => setProduct(data));
   }, []);

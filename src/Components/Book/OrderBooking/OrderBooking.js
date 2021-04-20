@@ -20,7 +20,7 @@ const OrderBooking = () => {
       data,
     };
     console.log(datas);
-    fetch("http://localhost:10000/addClientOrder", {
+    fetch("https://git.heroku.com/arcane-gorge-96812.git/addClientOrder", {
       method: "POST",
       body: JSON.stringify(datas),
       headers: {

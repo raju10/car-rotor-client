@@ -4,7 +4,7 @@ import TestimonialDetails from "../TestimonialDetails/TestimonialDetails";
 const Testimonial = () => {
   const [myReview, setMyReview] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:10000/orderReviews")
+    fetch("https://git.heroku.com/arcane-gorge-96812.git/orderReviews")
       .then((res) => res.json())
       .then((data) => {
         setMyReview(data);

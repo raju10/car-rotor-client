@@ -9,7 +9,7 @@ const Admain = () => {
   //////====================/////////
   const [prddetls, setPrdDetls] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:10000/ourProduct")
+    fetch("https://git.heroku.com/arcane-gorge-96812.git/ourProduct")
       .then((res) => res.json())
       .then((data) => {
         setPrdDetls(data);
@@ -17,7 +17,7 @@ const Admain = () => {
   }, []);
   ///////====================/////////
   useEffect(() => {
-    fetch("http://localhost:10000/isAdmain", {
+    fetch("https://git.heroku.com/arcane-gorge-96812.git/isAdmain", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ email: loginUser.email }),

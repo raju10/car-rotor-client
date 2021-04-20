@@ -9,7 +9,7 @@ const Navbar = () => {
   // const [clientOrdersDetls, setClientOrdersDetls] = useState([]);
   // console.log("clientOrdersDetls", clientOrdersDetls);
   // useEffect(() => {
-  //   fetch("http://localhost:10000/ourProduct")
+  //   fetch("https://git.heroku.com/arcane-gorge-96812.git/ourProduct")
   //     .then((res) => res.json())
   //     .then((data) => {
   //       setPrdDetls(data);
@@ -17,8 +17,8 @@ const Navbar = () => {
   // }, []);
   // //////////
   // useEffect(() => {
-  //   // fetch("http://localhost:10000/clientOrder?email=" + loginUser.email)
-  //   fetch("http://localhost:10000/AllOrder")
+  //   // fetch("https://git.heroku.com/arcane-gorge-96812.git/clientOrder?email=" + loginUser.email)
+  //   fetch("https://git.heroku.com/arcane-gorge-96812.git/AllOrder")
   //     .then((res) => res.json())
   //     .then((data) => {
   //       setClientOrdersDetls(data);
