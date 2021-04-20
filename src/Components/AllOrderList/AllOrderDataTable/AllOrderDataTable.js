@@ -23,6 +23,9 @@ const AllOrderDataTable = ({ allOrderList }) => {
           <th className="text-secondary" scope="col">
             Email
           </th>
+          <th className="text-secondary" scope="col">
+            Payment Id
+          </th>
         </tr>
       </thead>
       <tbody>
@@ -34,6 +37,7 @@ const AllOrderDataTable = ({ allOrderList }) => {
             <td>{order.orderName}</td>
             <td>{order.orderPrice}</td>
             <td>{order.data.clientEmail}</td>
+            <td>{order.paymentId}</td>
           </tr>
         ))}
       </tbody>

@@ -8,7 +8,7 @@ const YourPlacedOrder = () => {
   const handelBuyNow = () => {
     // const datas = { ...selcOrder };
     // console.log(datas);
-    // fetch("https://git.heroku.com/arcane-gorge-96812.git/addClientOrder", {
+    // fetch("https://arcane-gorge-96812.herokuapp.com/addClientOrder", {
     //   method: "POST",
     //   body: JSON.stringify(datas),
     //   headers: {

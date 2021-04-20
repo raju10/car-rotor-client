@@ -11,6 +11,8 @@ import Book from "./Components/Book/Book/Book";
 import BookingList from "./Components/BookingList/BookingList/BookingList";
 import Review from "./Components/Review/Review/Review";
 import AllOrderList from "./Components/AllOrderList/AllOrderList/AllOrderList";
+import ManageSarvice from "./Components/ManageSarvice/ManageSarvice/ManageSarvice";
+import MakeAdmain from "./Components/MakeAdmain/MakeAdmain";
 
 export const UserContext = createContext();
 export const userOrderContext = createContext();
@@ -24,7 +26,7 @@ function App() {
   return (
     <userOrderContext.Provider value={[selcOrder, setSelcOrder]}>
       <UserContext.Provider value={[loginUser, setLoginUser]}>
-        <h3>email : {loginUser.email}</h3>
+        {/* <h3>email : {loginUser.email}</h3> */}
         <Router>
           <Switch>
             <Route path="/home">
@@ -51,6 +53,12 @@ function App() {
             </Route>
             <Route path="/allOrderList">
               <AllOrderList></AllOrderList>
+            </Route>
+            <Route path="/manageSarvice">
+              <ManageSarvice></ManageSarvice>
+            </Route>
+            <Route path="/makeAdmain">
+              <MakeAdmain></MakeAdmain>
             </Route>
             <Route path="/login">
               <Login></Login>

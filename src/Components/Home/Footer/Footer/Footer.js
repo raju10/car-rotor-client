@@ -9,18 +9,18 @@ import {
 import "./Footer.css";
 const Footer = () => {
   const noNamed = [
-    { name: "Emergency Dental Care", link: "/emergency" },
+    { name: "Emergency Car Sarvice", link: "/emergency" },
     { name: "Check Up", link: "/checkup" },
-    { name: "Treatment of Personal Diseases", link: "/personal-treatment" },
+    { name: "Personal Diseases", link: "/personal-Diseases" },
     { name: "Tooth Extraction", link: "/tooth-extract" },
     { name: "Check Up", link: "/checkup" },
   ];
   const ourAddress = [
-    { name: "New York - 101010 Hudson", link: "//google.com/map" },
+    { name: "Chittagong-Bangladesh", link: "//google.com/map" },
     { name: "Yards", link: "//google.com/map" },
   ];
   const oralHealth = [
-    { name: "Emergency Dental Care", link: "/emergency" },
+    { name: "Emergency Car Sarvice", link: "/emergency" },
     { name: "Check Up", link: "/checkup" },
     { name: "Treatment of Personal Diseases", link: "/personal-treatment" },
     { name: "Tooth Extraction", link: "/tooth-extract" },
@@ -29,7 +29,7 @@ const Footer = () => {
     { name: "Check Up", link: "/checkup" },
   ];
   const services = [
-    { name: "Emergency Dental Care", link: "/emergency" },
+    { name: "Emergency Car Sarvice", link: "/emergency" },
     { name: "Check Up", link: "/checkup" },
     { name: "Treatment of Personal Diseases", link: "/personal-treatment" },
     { name: "Tooth Extraction", link: "/tooth-extract" },
@@ -43,7 +43,7 @@ const Footer = () => {
         <div className="row py-5">
           <FooterCol key={1} menuTitle={"."} menuItems={noNamed} />
           <FooterCol key={2} menuTitle="Services" menuItems={services} />
-          <FooterCol key={3} menuTitle="Oral Health" menuItems={oralHealth} />
+          <FooterCol key={3} menuTitle="Oral Services" menuItems={oralHealth} />
           <FooterCol key={4} menuTitle="Our Address" menuItems={ourAddress}>
             <ul className="social-media list-inline">
               <li className="list-inline-item">

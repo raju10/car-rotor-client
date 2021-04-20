@@ -1,9 +1,10 @@
 import React, { useContext, useEffect, useState } from "react";
-import { UserContext } from "../../../App";
-import AddAdmainSarvices from "../AddAdmainSarvices/AddAdmainSarvices";
-import Sidebar from "../Sidebar/Sidebar";
+import { UserContext } from "../../App";
+import AddAdmainSarvices from "../Admain/AddAdmainSarvices/AddAdmainSarvices";
+import Admain from "../Admain/Admain/Admain";
+import Sidebar from "../Admain/Sidebar/Sidebar";
 
-const Admain = () => {
+const MakeAdmain = () => {
   const [loginUser, setLoginUser] = useContext(UserContext);
   const [isAdmain, setIsAdmain] = useState(false);
   //////====================/////////
@@ -33,7 +34,7 @@ const Admain = () => {
             <Sidebar></Sidebar>
           </div>
           <div className="col-md-7 ">
-            <AddAdmainSarvices yoyo={false}></AddAdmainSarvices>
+            <AddAdmainSarvices yoyo={true}></AddAdmainSarvices>
           </div>
         </div>
       )}
@@ -41,4 +42,4 @@ const Admain = () => {
   );
 };
 
-export default Admain;
+export default MakeAdmain;

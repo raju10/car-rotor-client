@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 
-const AddAdmainSarvices = () => {
+const AddAdmainSarvices = ({ yoyo }) => {
   const {
     register,
     handleSubmit,
@@ -20,7 +20,7 @@ const AddAdmainSarvices = () => {
       price: data.price,
     };
     console.log(eventData);
-    const url = `https://git.heroku.com/arcane-gorge-96812.git/addEvent`;
+    const url = `https://arcane-gorge-96812.herokuapp.com/addEvent`;
     fetch(url, {
       method: "POST",
       body: JSON.stringify(eventData),
@@ -52,11 +52,14 @@ const AddAdmainSarvices = () => {
     <div>
       <form onSubmit={handleSubmit(onSubmit)} className="admain-form">
         {/* <input defaultValue="test" {...register("example")} /> */}
-        <input
-          {...register("email", { required: true })}
-          placeholder="Your Email Address"
-          className="form-control"
-        />
+        {yoyo && (
+          <input
+            style={{ background: "#1cc7c1" }}
+            {...register("email", { required: true })}
+            placeholder=" Please Type Your Make a new Admain Email Address"
+            className="form-control"
+          />
+        )}
 
         {errors.email && <span>Email is required</span>}
         <br />

@@ -9,7 +9,7 @@ const BookingList = () => {
   console.log("orderBookingList", orderBookingList);
   useEffect(() => {
     fetch(
-      "https://git.heroku.com/arcane-gorge-96812.git/clientOrder?email=" +
+      "https://arcane-gorge-96812.herokuapp.com/clientOrder?email=" +
         loginUser.email
     )
       .then((res) => res.json())

@@ -14,7 +14,7 @@ const ReviewDetails = () => {
   const onSubmit = (data) => {
     const datas = { ...loginUser, data };
     console.log(datas);
-    const url = `https://git.heroku.com/arcane-gorge-96812.git/addPrdReview`;
+    const url = `https://arcane-gorge-96812.herokuapp.com/addPrdReview`;
     fetch(url, {
       method: "POST",
       body: JSON.stringify(datas),

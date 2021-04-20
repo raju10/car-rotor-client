@@ -25,13 +25,13 @@ const servicesDatas = [
 const OurSarvices = () => {
   const [servicesData, setProduct] = useState([]);
   useEffect(() => {
-    fetch("https://git.heroku.com/arcane-gorge-96812.git/ourProduct")
+    fetch("https://arcane-gorge-96812.herokuapp.com/ourProduct")
       .then((res) => res.json())
       .then((data) => setProduct(data));
   }, []);
   return (
     <div>
-      <div>
+      <div style={{ textAlign: "center", paddingTop: "100px" }}>
         <h2>our awesome sarvices</h2>
       </div>
       <div className="d-flex justify-content-center mt-5 container">

@@ -1,0 +1,10 @@
+.OurSarvicesDetails-container img:hover {
+  transform: scale(0.9);
+}
+.OurSarvicesDetails-container img {
+  transition: all 0.5s ease-in-out;
+}
+.OurSarvicesDetails-container:hover {
+  border: none !important;
+  box-shadow: 5px 5px 10px gray;
+}

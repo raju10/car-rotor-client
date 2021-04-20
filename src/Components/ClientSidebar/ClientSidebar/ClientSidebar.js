@@ -39,7 +39,7 @@ const ClientSidebar = () => {
         </div>
       </ul>
       <div>
-        <Link to="/" className="text-black">
+        <Link to="/login" className="text-black">
           <span>Logout</span>
         </Link>
       </div>

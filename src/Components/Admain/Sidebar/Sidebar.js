@@ -22,7 +22,7 @@ const Sidebar = () => {
 
         <div>
           <li>
-            <Link to="/addService" className="text-black">
+            <Link to="/admain" className="text-black">
               <span>Add Service</span>
             </Link>
           </li>
@@ -39,7 +39,7 @@ const Sidebar = () => {
         </div>
       </ul>
       <div>
-        <Link to="/" className="text-black">
+        <Link to="/login" className="text-black">
           <span>Logout</span>
         </Link>
       </div>

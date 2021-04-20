@@ -9,7 +9,7 @@ const Navbar = () => {
   // const [clientOrdersDetls, setClientOrdersDetls] = useState([]);
   // console.log("clientOrdersDetls", clientOrdersDetls);
   // useEffect(() => {
-  //   fetch("https://git.heroku.com/arcane-gorge-96812.git/ourProduct")
+  //   fetch("https://arcane-gorge-96812.herokuapp.com/ourProduct")
   //     .then((res) => res.json())
   //     .then((data) => {
   //       setPrdDetls(data);
@@ -17,8 +17,8 @@ const Navbar = () => {
   // }, []);
   // //////////
   // useEffect(() => {
-  //   // fetch("https://git.heroku.com/arcane-gorge-96812.git/clientOrder?email=" + loginUser.email)
-  //   fetch("https://git.heroku.com/arcane-gorge-96812.git/AllOrder")
+  //   // fetch("https://arcane-gorge-96812.herokuapp.com/clientOrder?email=" + loginUser.email)
+  //   fetch("https://arcane-gorge-96812.herokuapp.com/AllOrder")
   //     .then((res) => res.json())
   //     .then((data) => {
   //       setClientOrdersDetls(data);
@@ -51,11 +51,6 @@ const Navbar = () => {
                 Home
               </Link>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link mr-5 " to="#">
-                Our team
-              </Link>
-            </li>
 
             <li class="nav-item">
               <Link class="nav-link mr-5 text-white" to="/admain">
@@ -63,11 +58,6 @@ const Navbar = () => {
               </Link>
             </li>
 
-            <li class="nav-item">
-              <Link class="nav-link mr-5 text-white" to="#">
-                Reviews
-              </Link>
-            </li>
             <li class="nav-item">
               <Link class="nav-link mr-5 text-white" to="#">
                 contact us

@@ -9,7 +9,7 @@ const AllOrderList = () => {
   const [loginUser, setLoginUser] = useContext(UserContext);
   useEffect(() => {
     fetch(
-      "https://git.heroku.com/arcane-gorge-96812.git/clientOrder?email=" +
+      "https://arcane-gorge-96812.herokuapp.com/clientOrder?email=" +
         loginUser.email
     )
       .then((res) => res.json())
@@ -18,7 +18,7 @@ const AllOrderList = () => {
       });
   }, []);
   ///////
-  fetch("https://git.heroku.com/arcane-gorge-96812.git/addAllOrder", {
+  fetch("https://arcane-gorge-96812.herokuapp.com/addAllOrder", {
     method: "POST",
     body: JSON.stringify(orderBookingList),
     headers: {
@@ -29,7 +29,7 @@ const AllOrderList = () => {
     .then((json) => console.log(json));
   //////
   useEffect(() => {
-    fetch("https://git.heroku.com/arcane-gorge-96812.git/AllOrder")
+    fetch("https://arcane-gorge-96812.herokuapp.com/AllOrder")
       .then((res) => res.json())
       .then((data) => {
         setAllOrderList(data);
